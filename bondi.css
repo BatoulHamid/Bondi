@@ -162,14 +162,20 @@ color: var(--section-color);
 }
 /*end project*/
 /*mail*/
-.final-btn {
+input[name="email"] {
+    border: none;
+    border-bottom: 1px solid white;
+}
+input::placeholder {
+    color: white;
+}
+input[name="submit"] {
     background-color: var(--dark-color);
     color: var(--yellow-clor);
-    padding: 0.5rem 1rem;
-    }
-    .final-btn:hover {
-        background-color: var(--green-color);
-    }
+}
+input[name="submit"]:focus {
+    outline: none;
+}
     .mail {
         background-color: var(--yellow-clor);
     }
@@ -178,13 +184,28 @@ footer {
     background-color: var(--dark-color);
     color: var(--section-color);
 }
-footer a {
-    text-decoration: none;
-    color: var(--section-color);
+footer ul li:hover {
+   color: var(--green-color);
 }
 footer .main-btn {
     background-color: var(--red-color);
     color: var(--section-color);
    
     
+}
+footer .icons .facebook {
+color: #1877f2;
+background-color: white;
+}
+footer .icons .twitter {
+  color: #1da1f2;  
+  background-color: white;
+}
+footer .icons .google-plus  {
+color: #dd4b39;
+background-color: white;
+}
+footer .icons .dribbble {
+color: #ea4c89;
+background-color: white;
 }
